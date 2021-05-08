@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finding Restaurants</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body align="right-align">
+    <div class="photo" align="center">
+    <div class="front">
+        
+            <div class="image"></div>
+            <div align="right-align">
+                <div class="container">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form" id="login" onsubmit="return validation()" align="right-align">
+                                <center><h1 class="main-heading">Login</h1></center>
+                                <login class="form-control">
+                                    <label for="username"></label>
+                                    <input type="text"placeholder="UserName*" id="username" name="username" required>
+                            
+                                        <label for="username"></label>
+                                        <input type="password"placeholder="password*" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+                                    
+                                    <label for="pinCode"></label>
+                                    <select name="pinCode" id="pinCode" required="required" >
+                                        <option>Pincode</option>
+                                        <option value="364001">364001</option>
+                                        <option value="364002">364002</option>
+                                    </select>
+                                </login><br>
+				                <button>LOGIN</button></br>
+                                
+                                <p class="message"><a href="forgot.html" target="_blank"><u>Forgot password?</u></a></p>
+                             <br><hr style="width:100%;text-align:left;margin-left:0,"><br>
+                                <div class="social-icon">
+                                 <!----   <button type="button"><a href="https://www.google.com/" target="_blank"><i class="fa fa-twitter"></i></a></button>
+                                    <button type="button"><a href="https://www.google.com/" target="_blank"><i class="fa fa-facebook"></a></i></button>-->
+                                    <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                                    </i> Login with Gmail
+                                  </a>
+                                </div>
+                              <br>  <hr style="width:100%;text-align:left;margin-left:0">
+				                <p class="message"><a href="#">Dont have an account?<u>Register</u></a></p>
+                                
+				            </form>
+                            <form class="register-form" id="registration" >
+                                <center><h1 class="main-heading">Registration</h1></center>
+                                <registration class="form-control">
+                                    <label for="username"></label>
+                                    <input type="text" placeholder="Name*" id="name" class="name" required>
+                                    
+                                    <label for="username"></label>
+                                    <input type="text" placeholder="UserName*" id="username" class="username" required>
+                                    
+                                    <label for="email"></label>
+                                    <input type="email" placeholder="xyz@gmail.com*" id="email" name="email" pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+                                    <label for="password"></label>
+                                    <input type="password"placeholder="password*" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters" required>
+
+                                    
+                                    <label for="Contact"></label>
+                                    <input type="tel" placeholder="Contact No.*" id="contact" name="contact"  pattern="^\d{10}$"  required>
+                                    
+                                </registration>
+				                <button>REGISTER</button>
+				                <p class="message"><a href="#">Already Registered?<u>Login</u></a>
+				                </p>
+				            </form>
+			             </div>
+	                </div>
+                </div>
+                
+            </div>
+            </div>
+    </div>    
+            </div>
+        </div>
+    </div>
+</div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="Javascript.js">
+    </script>
+</body>
+</html>

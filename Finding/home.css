@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  
+  .side-bar{
+    float: left;
+    width: 18.33%;
+    padding: 10px;
+    height: 750px; 
+  }
+  .search-engine{
+  
+    float: left;
+    width: 60.33%;
+    padding: 10px;
+    height: 750px;
+    }
+    .specialities{
+    
+    float: left;
+    width: 19.34%;
+    padding: 10px;
+    height: 750px;
+    }
+    .fonts{
+      font-size: 15px;
+    }
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+   
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: -10px;
+  background-color:white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 10px 10px 10px 12px;
+  
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav ul li{
+  list-style-type: circle;
+  
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 25px;
+}
+.centertext {
+  font-size: 15px;
+  width: 100px;
+ 
+}
+
+.centertext h1 {
+  
+  font-size: 15px;
+  color: red;
+  font-weight: bold;
+  animation: textanimation 1s ease-in-out;
+}
+
+@keyframes textanimation {
+  0% {
+      letter-spacing: 20px;
+  }
+  100% {
+      letter-spacing: 1px;
+  }
+}
+
+.centertext p {
+  
+  font-size: 15px;
+  color: #ff0000;
+  font-weight: bold;
+  animation: textanimation2 0.5s ease-in-out;
+}
+
+@keyframes textanimation2 {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
