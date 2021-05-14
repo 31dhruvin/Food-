@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Navbar Sidebar - Fixed to Left or Right</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.2.1/materia/bootstrap.min.css"/>
+    
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+       
+    <link rel="stylesheet" href="dummy.css">
+   
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha206-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.js"></script>
+    <script src="dummy.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"style="font-size: 30px;">Food Finder</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"style="font-size: 20px;">HOME</a>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="font-size: 20px;">
+              ABOUT US
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><p style="text-align: center;font-style: oblique;">WE ARE PROFESSIONAL WEB DEVELOPER</p></li>
+              
+            </ul>
+          </li>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="font-size: 20px;">
+              CONTACT US
+            </a>
+             <div class="dropdown-menu">
+              <p style="text-align: center; font-size: 20px;"><strong>If any query feel free to contact us</strong></p>
+                <div class="social-media-links">
+                <a class="social-media-link facebook" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="social-media-link twitter" href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="social-media-link instagram" href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="social-media-link linkedin" href="#">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+               </div>
+            </div>
+        </li>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" class="btn btn-outline-dark" style="height:50px; width: 100px;margin-top: 3px;font-size: 20px;"; ><a href="#" style="color:white;">Logout</a></button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<section>
+    <div class="menu">
+       
+<div class="search">
+  <input type="text" placeholder="Search for foods" name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+        <hr>
+        <div class="container">
+            <div class="row">
+              <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img class="card-img-top" src="pizza.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white;"><strong>Pizza</strong></h5>
+                    <div class="card-content">
+                      <p class="card-text" style="margin-top: 75px;"></p>
+                      <a href="#" class="btn btn-primary">Place 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img class="card-img-top" src="Vadapav.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white;"><strong>Vada Pav</strong></h5>
+                    <div class="card-content">
+                      <p class="card-text" style="margin-top: 75px;"></p>
+                      <a href="#" class="btn btn-primary">Place 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img class="card-img-top" src="paav gathiya.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white;"><strong>Paav Gatheya</strong></h5>
+                    <div class="card-content">
+                      <p class="card-text" style="margin-top: 75px;"></p>
+                      <a href="#" class="btn btn-primary">Place 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img class="card-img-top" src="bateti.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white;"><strong>Bateti</strong></h5>
+                    <div class="card-content">
+                      <p class="card-text" style="margin-top: 75px;"></p>
+                      <a href="#" class="btn btn-primary">Place 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img class="card-img-top" src="maggi.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white;"><strong>Maggi</strong></h5>
+                    <div class="card-content">
+                      <p class="card-text" style="margin-top: 75px;"></p>
+                      <a href="#" class="btn btn-primary">Place 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-wrapper col-lg-4 col-md-6 col-xs-12">
+                <div class="card">
+                  <div class="card-img-wrapper">
+                    <img class="card-img-top" src="momos.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white;"><strong>Momos</strong></h5>
+                    <div class="card-content">
+                      <p class="card-text" style="margin-top: 75px;"></p>
+                      <a href="#" class="btn btn-primary">Place 1</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+          </div>
+          
+           </div>
+      
+    
+      
+</section>
+
+
+
+
+</body>
+</html>

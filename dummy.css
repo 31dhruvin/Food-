@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body {
+    min-height: 200vh;
+    
+    
+  }
+  
+  a {
+    cursor: pointer;
+  }
+  
+  
+.facebook:before,
+.twitter:before,
+.instagram:before,
+.linkedin:before,
+.youtube:before  {
+    background: blue;
+    background: linear-gradient(
+        45deg,
+        rgba(163, 0, 0, 0.7) 0%, 
+        rgba(230, 9, 9, 0.3) 49%, 
+        rgba(124, 86, 86, 0.5) 50%);
+}
+.social-media-links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+.social-media-link {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 23px;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 20px;
+}
+.social-media-link > i {
+    z-index: 1;
+}
+.social-media-link:before {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    content: "";
+    position: absolute;
+    background-size: 300%;
+    background-position: 0% 0%;
+    transition: background-position 0.55s 
+            cubic-bezier(0.79, 0.14, 0.15, 0.86);
+}
+.social-media-link:hover, 
+.social-media-link:active, 
+.social-media-link:focus {
+    transform: translateY(-16px);
+    padding-bottom: 32px;
+}
+.social-media-link:hover:before, 
+.social-media-link:active:before, 
+.social-media-link:focus:before {
+    background-position: top right;
+}
+.social-media-link + .social-media-link {
+    margin-left: 4px;
+}
+
+.menu {
+    width: 75%;
+    float: left;
+   
+  }
+  
+  
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+	
+	.search
+	{
+		width: 85%;
+		margin: 0 auto;
+	}
+
+}
+ 
+.card-wrapper {
+  margin-bottom: 30px;
+}
+.card-image .card .card-img-wrapper {
+  height: 100%;
+}
+.card-image .card .card-body {
+  display: none;
+}
+.card-image-title-description .card .card-img-wrapper {
+  max-height: 100px;
+}
+.card-image-title-description .card {
+  position: relative;
+  min-height: 300px;
+}
+.card-image-title-description .card .card-body {
+  height: auto;
+  position: relative;
+  top: 0;
+  margin-bottom: -70px;
+}
+.card-image-title-description .card:hover .card-body {
+  top: -70px;
+}
+.card-image-title-description .card .card-body .card-title {
+  margin-bottom: .75rem;
+}
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+  height: 100%;
+  width: 55%;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.card:hover {
+  box-shadow: 8px 12px 31px -10px #924992;
+}
+.card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  overflow: hidden;
+}
+.card-img-wrapper img {
+  transition: 1.5s ease;
+}
+.card:hover .card-img-wrapper img {
+  transform: scale(1.15);
+}
+.card-body .card-title {
+  margin-bottom: calc(50% + 20px);
+  transition: 1.5s ease;
+}
+.card:hover .card-body .card-title {
+  margin-bottom: .75rem;
+}
+
+.card-body {
+  position: absolute;
+  
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background-color: rgba(228, 114, 114, 0.596);
+  transition: 1.5s ease;
+}
+.card-content {
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  transition: 1.5s ease;
+}
+.card:hover .card-body {
+  height: 80%;
+}
+.card:hover .card-content {
+  bottom: 0;
+}
+body {
+  margin: 0;
+  background-image: linear-gradient(to right, #ECE9E6 , #FFFFFF);
+}
+  
+  .main {
+    width: 25%;
+    height: 510px;
+    float: left;
+    padding: 10px;
+    border: 1px solid red;
+  }
+  .search input[type=text] {
+    margin-top: 20px;
+    padding: 10px;
+    margin-left: 55px;
+    font-size: 1.5vw;
+    text-decoration: none;
+    border-radius: 20px;
+    float: left;
+    width: 40%;
+    background: #f1f1f1;
+  }
+  
+  .search button {
+    float: left;
+    width: 8%;
+    padding: 10px;
+    margin-top: 20px;
+    color: black;
+    font-size: 1.5vw;
+    border-radius: 20px;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  .search button:hover {
+    background:white;
+  }
+  
+  .search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
